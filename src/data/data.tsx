@@ -3,6 +3,7 @@ import spendingApp from '../assets/images/SpendingMockUp.png';
 import myPortfolio from '../assets/images/myPortfolio.png'
 import coffeeShop from '../assets/images/coffeeShop.png';
 
+
 export const PROJECTS_DATA = [
   {
     id: 1,

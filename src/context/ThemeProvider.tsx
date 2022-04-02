@@ -1,4 +1,6 @@
-import React, {createContext, useEffect, useContext, useState} from 'react';
+import * as React from 'react';
+
+import {createContext, useEffect, useContext, useState} from 'react';
 
 const DayNightThemeContext = createContext(true)
 

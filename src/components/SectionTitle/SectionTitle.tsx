@@ -1,6 +1,5 @@
 import * as React from 'react';
-// @ts-ignore
-import {SectionTitleContainer} from "./SectionTitle.styles.tsx";
+import {SectionTitleContainer} from "./SectionTitle.styles";
 
 const SectionTitle = ({children}) => {
   return (

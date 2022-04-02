@@ -1,9 +1,7 @@
 import * as React from 'react';
 import {FC} from 'react';
-// @ts-ignore
-import SectionTitle from "../SectionTitle/SectionTitle.tsx";
-// @ts-ignore
-import {AboutContainer, AboutContent, ATag} from './About.styles.tsx';
+import SectionTitle from "../SectionTitle/SectionTitle";
+import {AboutContainer, AboutContent, ATag} from './About.styles';
 
 const About: FC = (): JSX.Element => {
 	return (

@@ -2,8 +2,7 @@ import * as React from 'react';
 import {FC, useRef, useState, useEffect} from 'react';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from 'react-google-recaptcha';
-// @ts-ignore
-import {ContactContainer, FormContainer, SendBtn, WrapTitle} from "./Contact.styles.tsx";
+import {ContactContainer, FormContainer, SendBtn, WrapTitle} from "./Contact.styles";
 
 
 interface VerifiedProps {

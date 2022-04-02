@@ -1,12 +1,9 @@
 import * as React from 'react';
-// @ts-ignore
-import {NavLink, NavItem, MenuListContainer} from "./MenuList.styles.tsx";
-// @ts-ignore
-import {DayNightSwitchButton} from "../DayNightSwitchButton/DayNightSwitchButton.tsx";
+import {NavLink, NavItem, MenuListContainer} from "./MenuList.styles";
+import {DayNightSwitchButton} from "../DayNightSwitchButton/DayNightSwitchButton";
 import {useWindowSize} from "../../../hooks/useWindowSize";
 import {size} from "../../Utils/DeviceSize";
-// @ts-ignore
-import MobileDayNight from "../MobileDayNight/MobileDayNight.tsx";
+import MobileDayNight from "../MobileDayNight/MobileDayNight";
 
 const MenuList = (props) => {
   const {isOpen, setOpen} = props

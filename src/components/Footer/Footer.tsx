@@ -1,6 +1,5 @@
 import * as React from 'react';
-// @ts-ignore
-import {FooterContainer} from "./Footer.styles.tsx";
+import {FooterContainer} from "./Footer.styles";
 
  const Footer = () => {
   const date = new Date().getFullYear()

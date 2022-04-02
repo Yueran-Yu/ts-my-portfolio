@@ -1,11 +1,10 @@
 import React, {useRef, lazy, Suspense} from 'react';
 import Loading from "./components/Loading/Loading.tsx";
-import {fontCollection, GlobalStyle} from "./components/gobalStyles";
 import {useScrollPosition} from "./hooks/useScrollPosition";
 import {ThemeProvider} from "styled-components";
-import {lightTheme, darkTheme} from './components/gobalStyles'
-import {useDayNightTheme} from "./context/ThemeProvider";
-import {useOpenClose} from "./context/OpenCloseProvider";
+import {fontCollection, GlobalStyle,lightTheme, darkTheme} from './components/gobalStyles.tsx'
+import {useDayNightTheme} from "./context/ThemeProvider.tsx";
+import {useOpenClose} from "./context/OpenCloseProvider.tsx";
 
 const Nav = lazy(() => import('./components/Nav/NavBar/Nav.tsx'))
 const Home = lazy(() => import('../src/components/Home/Home.tsx'))

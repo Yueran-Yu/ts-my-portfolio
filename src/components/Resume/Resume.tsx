@@ -1,6 +1,5 @@
 import * as React from 'react';
-// @ts-ignore
-import {ResumeContainer} from "./Resume.styles.tsx";
+import {ResumeContainer} from "./Resume.styles";
 
 export const Resume = () => {
   return (

@@ -1,12 +1,10 @@
 import * as React from 'react';
-// @ts-ignore
-import {NavContainer, LeftNavContainer, RightNavContainer, MenuContainer} from "./Nav.styles.tsx";
+import {NavContainer, LeftNavContainer, RightNavContainer, MenuContainer} from "./Nav.styles";
 import {Logo} from "../../Logo";
 import {size} from '../../Utils/DeviceSize'
-// @ts-ignore
-import ToggleBtn from "../ToggleBtn/ToggleBtn.tsx";
-// @ts-ignore
-import MenuList from "../MenuList/MenuList.tsx";
+import ToggleBtn from "../ToggleBtn/ToggleBtn";
+
+import MenuList from "../MenuList/MenuList";
 import {useWindowSize} from "../../../hooks/useWindowSize";
 
 const menuVariants = {

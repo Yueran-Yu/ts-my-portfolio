@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import {deviceSize} from "../Utils/DeviceSize";
-// @ts-ignore
-import SectionTitle from "../SectionTitle/SectionTitle.tsx";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 export const ContactContainer = styled.div`
   padding: 0 20px;

@@ -1,6 +1,5 @@
 import * as React from 'react';
-// @ts-ignore
-import {ToggleButton} from "./ToggleBtn.styles.tsx";
+import {ToggleButton} from "./ToggleBtn.styles";
 import {motion} from 'framer-motion';
 import {useDayNightTheme} from "../../../context/ThemeProvider";
 

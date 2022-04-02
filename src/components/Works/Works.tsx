@@ -1,8 +1,6 @@
 import * as React from 'react';
-// @ts-ignore
-import {SectionContainer, WorkContainer} from "./Works.styles.tsx";
-// @ts-ignore
-import SectionTitle from "../SectionTitle/SectionTitle.tsx";
+import {SectionContainer, WorkContainer} from "./Works.styles";
+import SectionTitle from "../SectionTitle/SectionTitle";
 import {PROJECTS_DATA} from "../../data/data";
 import SubProject from "./SubProject/SubProject";
 

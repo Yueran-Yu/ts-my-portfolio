@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {ImArrowUp} from "react-icons/im";
-// @ts-ignore
-import {BackToTopContainer} from "./BackToTop.styles.tsx";
+import {BackToTopContainer} from "./BackToTop.styles";
 
 
 

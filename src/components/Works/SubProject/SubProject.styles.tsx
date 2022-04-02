@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {deviceSize} from "../../Utils/DeviceSize";
-import {CustomBtnContainer} from "../../CustomBtn.styles";
+// @ts-ignore
+import {CustomBtnContainer} from "../../CustomBtn.styles.tsx";
 
 export const ChildSection = styled.section`
   display: flex;

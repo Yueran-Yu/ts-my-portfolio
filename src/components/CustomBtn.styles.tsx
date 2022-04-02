@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import {deviceSize} from "./Utils/DeviceSize";
+// @ts-ignore
+import {deviceSize} from "./Utils/DeviceSize.tsx";
 
 export const CustomBtnContainer = styled.a`
   display: inline-block;

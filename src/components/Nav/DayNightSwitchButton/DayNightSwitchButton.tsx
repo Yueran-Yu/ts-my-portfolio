@@ -1,6 +1,5 @@
 import * as React from 'react';
-// @ts-ignore
-import {SwitchButtonContainer} from "./DayNightSwitchButton.styles.tsx";
+import {SwitchButtonContainer} from "./DayNightSwitchButton.styles";
 
 export const DayNightSwitchButton = ({isDay, themeChange}) => {
   const theme = isDay ? 'night' : 'day'

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import {ButtonWrapper, ChildBtn, ChildSection, FirstChild, SecondChild, UlWrapper} from "./SubProject.styles";
 
 const SubProject = ({title, content, projectUrl, githubUrl, skills, img, alt}) => {

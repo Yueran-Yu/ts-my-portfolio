@@ -1,6 +1,5 @@
 import * as React from 'react';
-// @ts-ignore
-import { HelloText, HomeContainer, MediaItem, MyName, ResumeBtn, SelfIntroduction, SelfText, SocialMedia} from "./Home.styles.tsx";
+import { HelloText, HomeContainer, MediaItem, MyName, ResumeBtn, SelfIntroduction, SelfText, SocialMedia} from "./Home.styles";
 import {Image} from "../Image";
 import {FaBlog, FaGithubSquare, FaLinkedin, FaTwitterSquare} from "react-icons/fa";
 
