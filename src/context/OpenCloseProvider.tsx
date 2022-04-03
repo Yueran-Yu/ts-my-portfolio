@@ -1,21 +1,27 @@
 import * as React from 'react';
-import {useState, createContext, useContext, useCallback} from 'react';
+import {FC, useState, createContext, useContext, useCallback, ReactNode} from 'react';
+import {OpenCloseProps} from "../type";
 
-const OpenCloseContext = createContext(false)
 
-export const OpenCloseProvider = ({children}) => {
-  const [isOpen, setOpen] = useState(false)
+const OpenCloseContext = createContext<OpenCloseProps>({
+	isOpen: false,
+	setOpen: () => {},
+	toggleOpenClose: () => {}
+})
 
-  const toggleOpenClose = useCallback(() => setOpen(!isOpen), [isOpen])
+export const OpenCloseProvider: FC<ReactNode> = ({children}) => {
+	const [isOpen, setOpen] = useState<boolean>(false)
 
-  return (
-    <OpenCloseContext.Provider value={{isOpen, setOpen, toggleOpenClose}}>
-      {children}
-    </OpenCloseContext.Provider>
-  )
+	const toggleOpenClose = useCallback(() => setOpen(!isOpen), [isOpen])
+
+	return (
+		<OpenCloseContext.Provider value={{isOpen, setOpen, toggleOpenClose}}>
+			{children}
+		</OpenCloseContext.Provider>
+	)
 }
 
 export const useOpenClose = () => {
-  const {isOpen, setOpen, toggleOpenClose} = useContext(OpenCloseContext)
-  return {isOpen, setOpen, toggleOpenClose}
+	const {isOpen, setOpen, toggleOpenClose} = useContext(OpenCloseContext)
+	return {isOpen, setOpen, toggleOpenClose}
 }

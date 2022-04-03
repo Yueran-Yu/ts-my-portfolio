@@ -15,10 +15,10 @@ const Home = () => {
         <SelfText>I'm a self-taught, persistent and forever learning front end developer</SelfText>
         <ResumeBtn href={process.env.PUBLIC_URL + "Grace_Yu_Resume.pdf"} target='_blank'>Resume</ResumeBtn>
         <SocialMedia>
-          <MediaItem href='https://twitter.com/librayuyueran'><FaTwitterSquare/></MediaItem>
-          <MediaItem href='https://github.com/Yueran-Yu'><FaGithubSquare/></MediaItem>
-          <MediaItem href='https://www.linkedin.com/in/grace-yyu/'><FaLinkedin/></MediaItem>
-          <MediaItem href='https://yueran-yu.github.io/'><FaBlog/></MediaItem>
+          <MediaItem><a href="href='https://twitter.com/librayuyueran'"><FaTwitterSquare/></a></MediaItem>
+          <MediaItem><a href="https://github.com/Yueran-Yu"><FaGithubSquare/></a></MediaItem>
+          <MediaItem><a href="https://www.linkedin.com/in/grace-yyu/"><FaLinkedin/></a></MediaItem>
+          <MediaItem><a href="https://yueran-yu.github.io/"><FaBlog/></a></MediaItem>
         </SocialMedia>
       </SelfIntroduction>
     </HomeContainer>

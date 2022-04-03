@@ -10,13 +10,13 @@ interface VerifiedProps {
 }
 
 const Contact: FC = (): JSX.Element => {
-	const form = useRef()
+	const form = useRef() as React.MutableRefObject<HTMLFormElement>;
 	const [visible, setVisible] = useState(false)
 	const [message, setMessage] = useState('')
 	const [verified, setVerified] = useState<VerifiedProps>({verified: false})
 
 	useEffect(() => {
-		let timer
+		let timer:ReturnType<typeof setTimeout> = setTimeout(() => {});
 		if (visible && verified) {
 			setMessage('Your Message has been sent!')
 			timer = setTimeout(() => {
@@ -27,17 +27,17 @@ const Contact: FC = (): JSX.Element => {
 		return () => clearTimeout(timer)
 	}, [verified, visible])
 
-	const sendEmail = (e) => {
+	const sendEmail = (e:React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		if (verified) {
-			emailjs.sendForm("service_s35zlsp", "template_8eh9mgl", form.current, "user_9jaR9uK6p1lDg2YOkWPal")
+			emailjs.sendForm("service_s35zlsp", "template_8eh9mgl", form.current!, "user_9jaR9uK6p1lDg2YOkWPal")
 				.then((result) => {
 					console.log(result.text);
 				}, (error) => {
 					console.log(error.text);
 				})
+				e.currentTarget.reset()
 
-			e.target.reset()
 			setVisible(true)
 			setVerified({verified: false})
 		} else {
@@ -48,8 +48,7 @@ const Contact: FC = (): JSX.Element => {
 		}
 	}
 
-	const ReCAPTCHAChange = (value) => {
-		console.log("Captcha value:", value);
+	const ReCAPTCHAChange = () => {
 		setVerified({verified: true})
 	}
 
