@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {useRef, lazy, Suspense} from 'react';
+import {useRef, lazy, Suspense, FC} from 'react';
 import Loading from "./components/Loading/Loading";
 import {useScrollPosition} from "./hooks/useScrollPosition";
 import {ThemeProvider} from "styled-components";
@@ -15,7 +15,7 @@ const BackToTop = lazy(() => import('./components/BackToTop/BackToTop'))
 const Footer = lazy(() => import('./components/Footer/Footer'))
 
 
-const App = () => {
+const App:FC = () => {
   const scrollPosition = useScrollPosition()
   const {isDay, toggleTheme} = useDayNightTheme()
   const {isOpen, setOpen, toggleOpenClose} = useOpenClose()

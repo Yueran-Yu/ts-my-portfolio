@@ -3,9 +3,9 @@ import {NavContainer, LeftNavContainer, RightNavContainer, MenuContainer} from "
 import {Logo} from "../../Logo";
 import {size} from '../../Utils/DeviceSize'
 import ToggleBtn from "../ToggleBtn/ToggleBtn";
-
 import MenuList from "../MenuList/MenuList";
 import {useWindowSize} from "../../../hooks/useWindowSize";
+import {Dispatch, SetStateAction} from "react";
 
 const menuVariants = {
   open: {
@@ -21,8 +21,16 @@ const menuTransition = {
   delay: 0.1
 }
 
-const Nav = (props) => {
-  const {isOpen, setOpen, toggleOpenClose} = props
+export interface NavProps{
+	isDay:boolean
+	isOpen:boolean
+	setOpen: Dispatch<SetStateAction<boolean>>
+	toggleOpenClose: ()=>void
+	themeChange: ()=>void
+}
+
+const Nav = (props:NavProps) => {
+  const {isOpen, toggleOpenClose} = props
   const {width} = useWindowSize()
   return (
     <NavContainer id='nav'>
@@ -37,7 +45,7 @@ const Nav = (props) => {
                            animate={isOpen ? 'open' : 'closed'}
                            variants={menuVariants}
                            transition={menuTransition}>
-              <MenuList setOpen={setOpen} {...props}/>
+              <MenuList {...props}/>
             </MenuContainer> :
             <MenuList {...props}/>
         }

@@ -2,48 +2,52 @@ import {createGlobalStyle} from 'styled-components';
 import {normalize} from 'styled-normalize';
 import {deviceSize} from "./Utils/DeviceSize";
 
+export type FontProps = typeof fontCollection
+export type NDThemeProps = typeof lightTheme
+
 export const fontCollection = {
-  small: '1.1rem',
-  middle: '1.4rem',
-  large: '1.6rem',
-  xLarge: '1.8rem',
-  xxLarge: '2rem',
-  sectionTitleSize: '2.4rem'
+	small: '1.1rem',
+	middle: '1.4rem',
+	large: '1.6rem',
+	xLarge: '1.8rem',
+	xxLarge: '2rem',
+	sectionTitleSize: '2.4rem'
 }
 
 export const lightTheme = {
-  bodyColor1: 'white',
-  bodyColor2: 'ghostwhite',
-  bodyColor3: '#ebf6ff',
-  navHover: '#133467',
-  color: '#133467',
-  imgBg: '#1c4d97',
-  fixedNavColor: '#f1faee',
-  toTopColor: '#e8efe8',
-  nightBackground: '#133467',
-  nightModeColor: 'ghostwhite',
-  toTopBackground: '#1c4d97',
-  cardBgColor1: '#c6dffc',
-  cardBgColor2: 'white',
-  transBg: `rgba(198,223,252, 0.88)`
+	bodyColor1: 'white',
+	bodyColor2: 'ghostwhite',
+	bodyColor3: '#ebf6ff',
+	navHover: '#133467',
+	color: '#133467',
+	imgBg: '#1c4d97',
+	fixedNavColor: '#f1faee',
+	toTopColor: '#e8efe8',
+	nightBackground: '#133467',
+	nightModeColor: 'ghostwhite',
+	toTopBackground: '#1c4d97',
+	cardBgColor1: '#c6dffc',
+	cardBgColor2: 'white',
+	transBg: `rgba(198, 223, 252, 0.88)`
 }
 
 export const darkTheme = {
-  bodyColor1: '#030f20',
-  bodyColor2: '#295496',
-  bodyColor3: '#133467',
-  navHover: 'ghostwhite',
-  color: 'ghostwhite',
-  imgBg: 'rgba(255, 255, 255);',
-  nightBackground: 'ghostwhite',
-  nightModeColor: '#133467',
-  fixedNavColor: '#457b9d',
-  toTopColor: '#1c4d97',
-  toTopBackground: '#e8efe8',
-  cardBgColor1: '#07234e',
-  cardBgColor2: '#d5e6fa',
-  transBg: `rgba(7, 35, 78, 0.88)`
+	bodyColor1: '#030f20',
+	bodyColor2: '#295496',
+	bodyColor3: '#133467',
+	navHover: 'ghostwhite',
+	color: 'ghostwhite',
+	imgBg: 'rgba(255, 255, 255);',
+	nightBackground: 'ghostwhite',
+	nightModeColor: '#133467',
+	fixedNavColor: '#457b9d',
+	toTopColor: '#1c4d97',
+	toTopBackground: '#e8efe8',
+	cardBgColor1: '#07234e',
+	cardBgColor2: '#d5e6fa',
+	transBg: `rgba(7, 35, 78, 0.88)`
 }
+
 
 export const GlobalStyle = createGlobalStyle`
   ${normalize}

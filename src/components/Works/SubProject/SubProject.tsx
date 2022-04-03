@@ -1,7 +1,17 @@
 import * as React from 'react';
 import {ButtonWrapper, ChildBtn, ChildSection, FirstChild, SecondChild, UlWrapper} from "./SubProject.styles";
+import {FC} from "react";
 
-const SubProject = ({title, content, projectUrl, githubUrl, skills, img, alt}) => {
+interface SubProjectProps{
+	title: string
+	content: string
+	projectUrl:string
+	githubUrl:string
+	skills: string[]
+	img: string
+	alt:string
+}
+const SubProject:FC<SubProjectProps> = ({title, content, projectUrl, githubUrl, skills, img, alt}) => {
   return (
     <ChildSection>
       <FirstChild className='first'>

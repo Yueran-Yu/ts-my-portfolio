@@ -2,8 +2,10 @@ import * as React from 'react';
 import {ToggleButton} from "./ToggleBtn.styles";
 import {motion} from 'framer-motion';
 import {useDayNightTheme} from "../../../context/ThemeProvider";
+import {FC} from "react";
 
-const Path = props => (
+
+const Path = (props:any) => (
   <motion.path
     fill="transparent"
     strokeLinecap='round'
@@ -11,8 +13,12 @@ const Path = props => (
     {...props}/>)
 
 const transition = {duration: 0.3}
+interface ToggleBtnProps{
+	toggle:()=>void
+	isOpen:boolean
+}
 
-const ToggleBtn = ({toggle, isOpen}) => {
+const ToggleBtn:FC<ToggleBtnProps> = ({toggle, isOpen}) => {
   const {isDay} = useDayNightTheme()
   const strokeColor = isDay ? '#133467' : 'white';
   return (

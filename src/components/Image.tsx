@@ -1,6 +1,11 @@
 import * as React from 'react';
+import {FC} from 'react';
 
-export const Image = ({ imageName}) => {
+interface ImageProps {
+	imageName:string
+}
+
+export const Image:FC<ImageProps> = ({imageName}) => {
   return (
     <picture>
       <img src={process.env.PUBLIC_URL + `/images/${imageName}.jpg`} alt={imageName} />

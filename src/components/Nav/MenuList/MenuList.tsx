@@ -4,8 +4,15 @@ import {DayNightSwitchButton} from "../DayNightSwitchButton/DayNightSwitchButton
 import {useWindowSize} from "../../../hooks/useWindowSize";
 import {size} from "../../Utils/DeviceSize";
 import MobileDayNight from "../MobileDayNight/MobileDayNight";
+import {Dispatch, SetStateAction} from "react";
+import {NavProps} from "../NavBar/Nav";
 
-const MenuList = (props) => {
+export interface MenuProps extends NavProps{
+	isOpen:boolean
+	setOpen: Dispatch<SetStateAction<boolean>>
+}
+
+const MenuList = (props:MenuProps) => {
   const {isOpen, setOpen} = props
   const {width} = useWindowSize()
   const closeMenu = () => setOpen(false)
@@ -130,7 +137,7 @@ const MenuList = (props) => {
               <NavLink to='contact' spy={true} offset={100} className='scroll-link'>Contact</NavLink>
             </NavItem>
             <NavItem>
-              {width <= size.tablet ? <MobileDayNight {...props}/> : <DayNightSwitchButton {...props}/>}
+              {width <= size.tablet ? <MobileDayNight onClick={closeMenu} {...props}/> : <DayNightSwitchButton {...props}/>}
             </NavItem>
           </MenuListContainer>)
       }

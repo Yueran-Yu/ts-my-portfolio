@@ -1,7 +1,13 @@
 import * as React from 'react';
 import {SwitchButtonContainer} from "./DayNightSwitchButton.styles";
+import {FC} from "react";
 
-export const DayNightSwitchButton = ({isDay, themeChange}) => {
+interface DNProps{
+isDay:boolean
+themeChange: ()=>void
+}
+
+export const DayNightSwitchButton:FC<DNProps> = ({isDay, themeChange}): JSX.Element => {
   const theme = isDay ? 'night' : 'day'
   return (
     <SwitchButtonContainer onClick={themeChange}>

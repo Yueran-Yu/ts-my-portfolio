@@ -1,8 +1,14 @@
 import * as React from 'react';
-// @ts-ignore
-import {MobileDayNightContainer} from "./MobileDayNight.styles.tsx";
+import {MobileDayNightContainer} from "./MobileDayNight.styles";
+import {FC } from "react";
 
-const MobileDayNight = ({isDay, themeChange}) => {
+interface MobileDayNightProps{
+	isDay:boolean
+	themeChange: ()=>void
+	onClick: ()=>void
+}
+
+const MobileDayNight:FC<MobileDayNightProps> = ({isDay, themeChange}) => {
 
   return (
     <MobileDayNightContainer onClick={themeChange}>

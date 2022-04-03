@@ -1,7 +1,11 @@
 import * as React from 'react';
 import {SectionTitleContainer} from "./SectionTitle.styles";
+import {FC, ReactNode} from "react";
 
-const SectionTitle = ({children}) => {
+interface SectionTitleProps{
+	children:ReactNode
+}
+const SectionTitle:FC<SectionTitleProps> = ({children}) => {
   return (
     <SectionTitleContainer>
       <span>

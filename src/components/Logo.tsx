@@ -1,7 +1,11 @@
 import * as React from 'react';
 import {Link} from 'react-scroll';
+import {FC} from "react";
 
-export const Logo = ({id}) => (
+interface LogoProps{
+	id:string
+}
+export const Logo:FC<LogoProps> = ({id}) => (
   <Link to={id}>
     <svg className='logo' width="541" height="547" viewBox="0 0 541 547" fill="none"
          xmlns="http://www.w3.org/2000/svg">

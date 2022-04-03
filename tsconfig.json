@@ -99,6 +99,6 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "include": ["src", "index.d.ts",
-    "src/type.d.ts"
+    "theme.d.ts"
   ]
 }

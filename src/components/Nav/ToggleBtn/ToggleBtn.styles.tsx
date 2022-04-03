@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 import {deviceSize} from "../../Utils/DeviceSize";
+import { MouseEventHandler} from "react";
 
-export const ToggleButton = styled.div`
+interface ToggleBtnProps{
+	onClick: MouseEventHandler<HTMLDivElement>
+	isOpen: boolean
+}
+export const ToggleButton = styled.div<ToggleBtnProps>`
   display: none;
 
 
