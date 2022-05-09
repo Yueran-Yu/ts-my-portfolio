@@ -109,7 +109,7 @@ const Contact: FC = (): JSX.Element => {
 					<div>
 						<ReCAPTCHA
 							type="image"
-							sitekey="6LcR92YeAAAAAJ5fYqy4wg6RSM1fjAdmYFi2okdO"
+							sitekey="6LfrFtUfAAAAAHDtRI_KRnDmKKVC7rVQNENpX9io"
 							onChange={ReCAPTCHAChange}
 						/>
 						<p>{message}</p>
