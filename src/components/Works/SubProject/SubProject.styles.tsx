@@ -7,7 +7,6 @@ export const ChildSection = styled.section`
   display: flex;
   flex-direction: row;
   margin: 1.2rem 0;
-  cursor: pointer;
 
   @media screen and ${deviceSize.tablet} {
     margin-top: 0;
@@ -16,7 +15,6 @@ export const ChildSection = styled.section`
     height: 100%;
     flex-direction: column-reverse;
     position: relative;
-
   }
 `
 

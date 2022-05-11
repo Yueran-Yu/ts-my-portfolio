@@ -191,3 +191,4 @@ export const MediaItem = styled.li`
     transform: scale(1.05);
   }
 `
+

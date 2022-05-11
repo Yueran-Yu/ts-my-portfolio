@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {useRef, lazy, Suspense, FC} from 'react';
-import Loading from "./components/Loading/Loading";
+import {Loading} from "./components/Loading/Loading";
 import {useScrollPosition} from "./hooks/useScrollPosition";
 import {ThemeProvider} from "styled-components";
 import {fontCollection, GlobalStyle,lightTheme, darkTheme} from './components/gobalStyles';
