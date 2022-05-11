@@ -1,4 +1,4 @@
-import {NDThemeProps,FontProps } from "./src/components/gobalStyles";
+import {NDThemeProps,FontProps } from "./components/gobalStyles";
 
 
 declare module "styled-components" {

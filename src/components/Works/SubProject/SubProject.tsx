@@ -11,6 +11,7 @@ interface SubProjectProps{
 	img: string
 	alt:string
 }
+
 const SubProject:FC<SubProjectProps> = ({title, content, projectUrl, githubUrl, skills, img, alt}) => {
   return (
     <ChildSection>
