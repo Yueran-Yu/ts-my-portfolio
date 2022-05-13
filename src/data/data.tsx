@@ -25,7 +25,7 @@ export const PROJECTS_DATA = [
 		content: 'This is an E-Commerce Project that I learned from Andrei Neagoie and Yihua Zhang at Udemy. Redux, Thunk, Hooks, HOC, GraphQL, Stripe Payment API, etc. are some of the technologies used in this project. I replaced the data source with Rapid API. Part of the design and layout also has been reconstructed.',
 		projectUrl: 'https://happy-family-clothing.netlify.app/',
 		githubUrl: 'https://github.com/Yueran-Yu/happy-family-clothing-dev',
-		skills: ['Typescript', 'React', 'Firebase', 'Rapid-API', 'Stripe-API', 'Redux', 'Authentication', 'Styled-Components'],
+		skills: ['Typescript', 'React','Firebase', 'Rapid-API', 'Stripe-API', 'Redux','Authentication', 'Styled-Components'],
 		img: happyFamilyApp,
 		alt: 'Happy Family Clothing'
 	},
