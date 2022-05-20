@@ -34,9 +34,7 @@ const About: FC = (): JSX.Element => {
 					encounter problems during constructing a project.
 					It seems like an Errors collection that I can often review in case I forgot.
 				</li>
-				<li>In my spare time, I like to go to the gym to run and swim to keep my fitness. Recently, I have been
-					fascinated with moxibustion, since it can relieve back pain, pain from arthritis, and other chronic
-					illnesses.
+				<li>In my spare time, I like running, since it keeps my fitness. I have been running for about 50 minutes every two days for almost half a year.
 				</li>
 			</AboutContent>
 		</AboutContainer>
