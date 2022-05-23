@@ -34,7 +34,8 @@ const About: FC = (): JSX.Element => {
 					encounter problems during constructing a project.
 					It seems like an Errors collection that I can often review in case I forgot.
 				</li>
-				<li>In my spare time, I like running, since it keeps my fitness. I have been running for about 50 minutes every two days for almost half a year.
+				<li>In my spare time, I like running, since it keeps my fitness. I have been running for about 50 minutes every
+					two days for almost half a year.
 				</li>
 			</AboutContent>
 		</AboutContainer>
